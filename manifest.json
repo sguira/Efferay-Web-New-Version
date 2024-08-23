@@ -1,5 +1,5 @@
 {
-    "name": "Efferay",
+    "name": "Application Efferay",
     "short_name": "Efferay",
     "start_url": ".",
     "display": "standalone",
@@ -10,23 +10,23 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "bg.png",
+            "src": "icons/bg.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "bg.png",
+            "src": "icons/bg.png",
             "sizes": "512x512",
             "type": "image/png"
         },
         {
-            "src": "bg.png",
+            "src": "icons/bg.png",
             "sizes": "192x192",
             "type": "image/png",
             "purpose": "maskable"
         },
         {
-            "src": "bg.png",
+            "src": "icons/bg.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
