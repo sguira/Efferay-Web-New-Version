@@ -1,6 +1,6 @@
 {
-    "name": "application_efferay",
-    "short_name": "application_efferay",
+    "name": "Application Efferay",
+    "short_name": "App Efferay",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
