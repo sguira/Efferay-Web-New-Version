@@ -1,6 +1,6 @@
 {
-    "name": "Efere",
-    "short_name": "Efere",
+    "name": "gestion_client",
+    "short_name": "gestion_client",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
