@@ -3,6 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
+<<<<<<< HEAD
 const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 ".git/config": "24d9607856e9ca1101ca6571978bdea8",
 ".git/description": "a0a7c3fff21f2aea3cfa1d0316dd816c",
@@ -873,6 +874,9 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 ".git/refs/heads/main": "ab89405e468f69cf05ac96c6b7a582fd",
 ".git/refs/remotes/origin/main": "ab89405e468f69cf05ac96c6b7a582fd",
 "assets/AssetManifest.bin": "3ee9a8fb4d7a873cd24877849355a8a9",
+=======
+const RESOURCES = {"assets/AssetManifest.bin": "3ee9a8fb4d7a873cd24877849355a8a9",
+>>>>>>> 7682049 (premier commit)
 "assets/AssetManifest.bin.json": "461a97007eb5c7fd5553dd5a6d4722d6",
 "assets/AssetManifest.json": "0bffe40052a0f99fab0f695c2485e761",
 "assets/assets/icon/abonnement.png": "771147cdd2c763fb81060534cb1da143",
@@ -1061,8 +1065,13 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 "assets/assets/icon/what.png": "37592a5179fb8789d7c6ea6e536c15d5",
 "assets/assets/icon/whatssapp.png": "4d06d2deb0fd32a70c9df567c76b29c3",
 "assets/FontManifest.json": "f6c47efd5f17ce868ecd6b76d3a3461e",
+<<<<<<< HEAD
 "assets/fonts/MaterialIcons-Regular.otf": "4eb9e88b2e810f93e9677d1a4cc0d2eb",
 "assets/NOTICES": "7f36e803b18b5795f79649fae65695ff",
+=======
+"assets/fonts/MaterialIcons-Regular.otf": "ce2114b063d605abd4e334cadb3b4346",
+"assets/NOTICES": "4e23bb3c727cbb2ee64b370f996ebe32",
+>>>>>>> 7682049 (premier commit)
 "assets/packages/country_code_picker/flags/ad.png": "796914c894c19b68adf1a85057378dbc",
 "assets/packages/country_code_picker/flags/ae.png": "045eddd7da0ef9fb3a7593d7d2262659",
 "assets/packages/country_code_picker/flags/af.png": "44bc280cbce3feb6ad13094636033999",
@@ -1388,6 +1397,7 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 "assets/packages/country_code_picker/src/i18n/uz.json": "00e22e3eb3a7198f0218780f2b04369c",
 "assets/packages/country_code_picker/src/i18n/vi.json": "fa3d9a3c9c0d0a20d0bd5e6ac1e97835",
 "assets/packages/country_code_picker/src/i18n/zh.json": "44a9040959b2049350bbff0696b84d45",
+<<<<<<< HEAD
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "a4974e178e9f4c63e35495f46729f11b",
 "assets/packages/flutter_feather_icons/fonts/feather.ttf": "40469726c5ed792185741388e68dd9e8",
 "assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
@@ -1395,6 +1405,15 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "17ee8e30dde24e349e70ffcdc0073fb0",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "0c5257585d97bccd11e033aa342688e6",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "226ec353cbafaaa7bdbbb605908385aa",
+=======
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "8f78a5b28ace55181e83749d778d0e05",
+"assets/packages/flutter_feather_icons/fonts/feather.ttf": "40469726c5ed792185741388e68dd9e8",
+"assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css": "5a8d0222407e388155d7d1395a75d5b9",
+"assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html": "16911fcc170c8af1c5457940bd0bf055",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "4769f3245a24c1fa9965f113ea85ec2a",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "872a01c6bd9565124639345d72b81a8e",
+"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "58c07058f84c69264241a640c1208546",
+>>>>>>> 7682049 (premier commit)
 "assets/packages/intl_phone_field/assets/flags/ad.png": "384e9845debe9aca8f8586d9bedcb7e6",
 "assets/packages/intl_phone_field/assets/flags/ae.png": "792efc5eb6c31d780bd34bf4bad69f3f",
 "assets/packages/intl_phone_field/assets/flags/af.png": "ba710b50a060b5351381b55366396c30",
@@ -1653,6 +1672,7 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 "assets/packages/intl_phone_field/assets/flags/zw.png": "078a3267ea8eabf88b2d43fe4aed5ce5",
 "assets/packages/line_icons/lib/assets/fonts/LineIcons.ttf": "bcaf3ba974cf7900b3c158ca593f4971",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
+<<<<<<< HEAD
 "bg.png": "4ec54e40c298181326323345e026beba",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
 "canvaskit/canvaskit.js.symbols": "9bf8b1ab7b28925759539f5dab0f7942",
@@ -1668,19 +1688,44 @@ const RESOURCES = {".git/COMMIT_EDITMSG": "24501f092436d88c15947f2a8871fc83",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "flutter.js": "c71a09214cb6f5f8996a531350400a9a",
 "icons/bg.png": "4ec54e40c298181326323345e026beba",
+=======
+"canvaskit/canvaskit.js": "26eef3024dbc64886b7f48e1b6fb05cf",
+"canvaskit/canvaskit.js.symbols": "efc2cd87d1ff6c586b7d4c7083063a40",
+"canvaskit/canvaskit.wasm": "e7602c687313cfac5f495c5eac2fb324",
+"canvaskit/chromium/canvaskit.js": "b7ba6d908089f706772b2007c37e6da4",
+"canvaskit/chromium/canvaskit.js.symbols": "e115ddcfad5f5b98a90e389433606502",
+"canvaskit/chromium/canvaskit.wasm": "ea5ab288728f7200f398f60089048b48",
+"canvaskit/skwasm.js": "ac0f73826b925320a1e9b0d3fd7da61c",
+"canvaskit/skwasm.js.symbols": "96263e00e3c9bd9cd878ead867c04f3c",
+"canvaskit/skwasm.wasm": "828c26a0b1cc8eb1adacbdd0c5e8bcfa",
+"canvaskit/skwasm.worker.js": "89990e8c92bcb123999aa81f7e203b1c",
+"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"flutter.js": "4b2350e14c6650ba82871f60906437ea",
+"flutter_bootstrap.js": "8b928752264a56d413d5e5b4fe598447",
+>>>>>>> 7682049 (premier commit)
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
+<<<<<<< HEAD
 "index.html": "f080e7ca33b72cdf722e1887902a810d",
 "/": "f080e7ca33b72cdf722e1887902a810d",
 "main.dart.js": "ed2d5656e53b4882f7a9c517f8bd7ee0",
+=======
+"index.html": "c4f642e4e9c217225ad3928b841cfeab",
+"/": "c4f642e4e9c217225ad3928b841cfeab",
+"main.dart.js": "07db468374a1aa0e104c92f6f2fec27a",
+>>>>>>> 7682049 (premier commit)
 "manifest.json": "b1ae488ffe489902ef22a4f33aa62837",
 "version.json": "46822c46f88318f942c7fdb3ca2c74ee"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
 "index.html",
+<<<<<<< HEAD
+=======
+"flutter_bootstrap.js",
+>>>>>>> 7682049 (premier commit)
 "assets/AssetManifest.bin.json",
 "assets/FontManifest.json"];
 
