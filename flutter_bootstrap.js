@@ -33,10 +33,23 @@ addEventListener("message", eventListener);
 if (!window._flutter) {
   window._flutter = {};
 }
-_flutter.buildConfig = {"engineRevision":"5a2a6a42cce67f965cf540fcecf616faca624aa1","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
+_flutter.buildConfig = {"engineRevision":"5a2a6a42cce67f965cf540fcecf616faca624aa1","builds":[{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"},{}]};
 
-_flutter.loader.load({
-  serviceWorkerSettings: {
-    serviceWorkerVersion: "4012982715" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */
-  }
-});
+
+// Amorçage personnalisé : mêmes réglages que le script généré par Flutter,
+// avec des messages d'étape pour l'écran de chargement de index.html.
+(function () {
+  var etape = window.efereEtape || function () {};
+
+  _flutter.loader.load({
+    serviceWorkerSettings: {
+      serviceWorkerVersion: "3731250093" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */,
+    },
+    onEntrypointLoaded: async function (engineInitializer) {
+      etape("Démarrage du moteur graphique…");
+      var appRunner = await engineInitializer.initializeEngine();
+      etape("Presque prêt…");
+      await appRunner.runApp();
+    },
+  });
+})();

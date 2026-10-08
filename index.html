@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,6 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="EFERE — Gestion clients, ventes, stock et pilotage d'entreprise.">
 
   <!-- iOS meta tags & icons -->
@@ -27,12 +28,75 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.jpg"/>
+  <link rel="icon" type="image/png" href="logo_efere.png"/>
 
   <title>EFERE</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    Démarrage plus rapide : on ouvre tout de suite les connexions vers les
+    serveurs utilisés au lancement (moteur CanvasKit, Google Fonts) et on
+    télécharge main.dart.js en parallèle du script d'amorçage.
+  -->
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preload" href="main.dart.js" as="script">
+
+  <!-- Écran de chargement affiché immédiatement (avant que Flutter ne démarre). -->
+  <style>
+    html, body { margin: 0; height: 100%; background: #F3F6F4; }
+    #efere-chargement {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 18px; background: #F3F6F4; color: #0D4A35;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      transition: opacity .35s ease;
+    }
+    #efere-chargement.fini { opacity: 0; pointer-events: none; }
+    #efere-chargement img {
+      width: 96px; height: 96px; border-radius: 24px; background: #fff; object-fit: contain; padding: 8px; box-sizing: border-box;
+      box-shadow: 0 10px 30px rgba(13, 74, 53, .18);
+      animation: efere-respire 1.6s ease-in-out infinite;
+    }
+    #efere-chargement .nom { font-size: 22px; font-weight: 700; letter-spacing: .02em; }
+    #efere-chargement .barre {
+      width: 200px; height: 6px; border-radius: 3px; background: #DCE6E0; overflow: hidden;
+    }
+    #efere-chargement .barre i {
+      display: block; height: 100%; width: 40%; border-radius: 3px; background: #0D4A35;
+      animation: efere-glisse 1.2s ease-in-out infinite;
+    }
+    #efere-chargement .etape { font-size: 13px; color: #5D6B64; min-height: 18px; }
+    @keyframes efere-respire { 50% { transform: scale(1.05); } }
+    @keyframes efere-glisse { 0% { transform: translateX(-100%); } 100% { transform: translateX(250%); } }
+    @media (prefers-reduced-motion: reduce) {
+      #efere-chargement img, #efere-chargement .barre i { animation: none; }
+    }
+  </style>
 </head>
 <body>
+  <div id="efere-chargement" role="status" aria-live="polite">
+    <img src="logo_efere.png" alt="">
+    <div class="nom">Efere</div>
+    <div class="barre"><i></i></div>
+    <div class="etape" id="efere-etape">Chargement de l'application…</div>
+  </div>
+  <script>
+    // Messages d'étape mis à jour par flutter_bootstrap.js ; l'écran disparaît
+    // dès que Flutter a dessiné sa première image.
+    window.efereEtape = function (texte) {
+      var el = document.getElementById('efere-etape');
+      if (el) el.textContent = texte;
+    };
+    window.addEventListener('flutter-first-frame', function () {
+      var el = document.getElementById('efere-chargement');
+      if (!el) return;
+      el.classList.add('fini');
+      setTimeout(function () { el.remove(); }, 400);
+    });
+  </script>
+
   <!-- Callback OAuth éventuel (fenêtre popup) -->
   <script>
     window.addEventListener('load', function () {
@@ -49,8 +113,8 @@
   </script>
 
   <!--
-    Initialisation moderne Flutter web (flutter_bootstrap.js).
-    Voir : https://docs.flutter.dev/platform-integration/web/initialization
+    Initialisation moderne Flutter web (flutter_bootstrap.js, voir
+    web/flutter_bootstrap.js). Doc : https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
 </body>
