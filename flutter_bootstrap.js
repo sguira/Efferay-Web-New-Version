@@ -43,7 +43,7 @@ _flutter.buildConfig = {"engineRevision":"5a2a6a42cce67f965cf540fcecf616faca624a
 
   _flutter.loader.load({
     serviceWorkerSettings: {
-      serviceWorkerVersion: "3137534154" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */,
+      serviceWorkerVersion: "2189527797" /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */,
     },
     onEntrypointLoaded: async function (engineInitializer) {
       etape("Démarrage de l'application…");
